@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Mary Johnson",
+    "birthDate": "2000-01-01",
+    "email": "maryjo@gmail.com",
+    "role": "user",
+    "status": "active",
+    "friends": [
+      2,
+      3
+    ],
+    "profileImage": "https://cdn-icons-png.flaticon.com/512/4140/4140047.png"
+  },
+  {
+    "id": 2,
+    "name": "Peter Thomson",
+    "birthDate": "1995-03-23",
+    "email": "peterthomson95@gmail.com",
+    "role": "admin",
+    "status": "active",
+    "friends": [
+      3
+    ],
+    "profileImage": "https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
+  },
+  {
+    "id": 3,
+    "name": "Sam Smith",
+    "birthDate": "1999-04-11",
+    "email": "samsmith@gmail.com",
+    "role": "admin",
+    "status": "active",
+    "friends": [
+      4,
+      5
+    ],
+    "profileImage": "https://cdn-icons-png.flaticon.com/512/4140/4140037.png"
+  },
+  {
+    "id": 4,
+    "name": "Gary Sanders",
+    "birthDate": "2000-05-10",
+    "email": "garys@gmail.com",
+    "role": "user",
+    "status": "unverified",
+    "friends": [
+      1,
+      2
+    ],
+    "profileImage": "https://cdn-icons-png.flaticon.com/512/4140/4140061.png"
+  },
+  {
+    "id": 5,
+    "name": "Scarlett Dots",
+    "birthDate": "2001-09-04",
+    "email": "scarlettdots@gmail.com",
+    "role": "user",
+    "status": "blocked",
+    "friends": [
+      1,
+      4
+    ],
+    "profileImage": "https://cdn-icons-png.flaticon.com/512/4140/4140051.png"
+  }
+]

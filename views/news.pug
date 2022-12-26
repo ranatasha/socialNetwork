@@ -1,0 +1,33 @@
+html(lang="en")
+    head
+        title Friends
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="/public/assets/css/main.css")
+        link(rel="stylesheet", href="/public/assets/css/news.css")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,200,100", rel='stylesheet', type='text/css')
+        script(
+            src="https://code.jquery.com/jquery-3.6.1.js",
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=",
+            crossorigin="anonymous"
+        )
+        script(src='/public/scripts/newsScript.js')
+        script(src="https://kit.fontawesome.com/ac0925c6df.js" crossorigin="anonymous")
+
+    body
+        div.wrapper
+            div.mainWindow
+                - var objectsList = posts
+                - var user = user
+                -var friendsList = friends
+                include includes/menu
+                h1 <br>NewsFeed of #{user.name}
+                div.news-feed
+                    each object, index in objectsList
+                        div.news-item
+                            div.news-item__author
+                                div.authorID #{object['userID']}
+                                each friend, ind in friendsList
+                                    if(friend['id'] ===object['userID'])
+                                        img.authorImg(src=`${friend['profileImage']}`, alt='ProfileImg is here')
+                                        div.authorName #{friend['name']}
+                            div.news-item__content #{object['content']}

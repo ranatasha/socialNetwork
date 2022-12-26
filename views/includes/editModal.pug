@@ -1,0 +1,36 @@
+dialog#modal-window
+    div.modal.modal-window
+        div.modal-content
+            div.modal-controls
+                p.modal-header User Card
+                button.controls-btn-close(onClick="closeModal(this)")
+                    i.fa.fa-times-circle-o.fa-2x(aria-hidden=true)
+            div.modal-buttons
+                button.buttonModal(onclick="followToFriendsList()") Friends
+                button.buttonModal(onclick="followToNews()") NewsFeed
+            div.modal-info
+                div.modal-info-item
+                    p User ID:
+                    input(type="text", disabled)#id
+                div.modal-info-item
+                    p Name:
+                    input(type="text", required)#name
+                div.modal-info-item
+                    p Birthday:
+                    input(type="date")#birthDate
+                div.modal-info-item
+                    p Email:
+                    input(type="email")#email
+                div.modal-info-item
+                    p Role:
+                    select#role
+                        option(value="admin") Admin
+                        option(value="user") User
+                div.modal-info-item
+                    p Status:
+                    select#status
+                        option(value="active") Active
+                        option(value="blocked") Blocked
+                        option(value="unverified") Unverified
+                div#validation-error
+                button(class="buttonModal", onclick="getEditData()") Edit

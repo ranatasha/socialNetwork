@@ -1,0 +1,36 @@
+{
+  "name": "social-network-admin-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "node app.js",
+    "dev": "nodemon app.js",
+    "sass": "gulp sasswatch",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "js",
+    "rest",
+    "webpack",
+    "babel",
+    "gulp"
+  ],
+  "author": "ranatasha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "nodemon": "^2.0.20",
+    "pug": "^3.0.2",
+    "sass": "^1.56.1"
+  },
+  "type": "module"
+}

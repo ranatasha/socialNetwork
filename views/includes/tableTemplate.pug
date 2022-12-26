@@ -1,0 +1,29 @@
+div.table-template
+    div.table-controls
+        button.table-controls.table-controls-remove(onclick="openRemoveModal()") Remove
+
+    table.bordered
+        thead
+            tr
+                th Photo
+                th Name
+                th Birthday
+                th Email
+                th Role
+                th Status
+        tbody
+            each object, index in objectsList
+                tr.table-row(onclick='openModalEvent("'+object.id+'")')
+                    td
+                        div.cell-content
+                            img.cell-photo(src=object['profileImage'], alt="User's photo is here")
+                    td
+                        div.cell-content=object['name']
+                    td
+                        div.cell-content=object['birthDate']
+                    td
+                        div.cell-content=object['email']
+                    td
+                        div.cell-content=object['role']
+                    td
+                        div.cell-content=object['status']

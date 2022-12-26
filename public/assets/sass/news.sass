@@ -1,0 +1,41 @@
+$author-bg-color-main: #464057
+$content-bg-color-main: #99a4cc
+$news-item-bg-color-main: #3f3a42c2
+%news-item-div
+  display: flex
+  align-items: center
+  border: 2px solid #FFF
+  border-radius: 6px
+  padding: 5px
+  box-shadow: 0 0 6px 0.3px #363636 inset
+
+.news-feed
+  width: 100%
+  margin-top: 5px
+.news-item
+  border: 1px solid #ffffff
+  border-radius: 6px
+  width: 100%
+  padding: 20px 15px
+  margin-bottom: 10px
+  background-color: $news-item-bg-color-main
+  &:last-child
+    margin-bottom: 0
+  .news-item__author
+    @extend %news-item-div
+    width: max-content
+    background-color: $author-bg-color-main
+    .authorImg
+      width: 50px
+    .authorName
+      padding: 15px
+      font-size: 18px
+      font-weight: 600
+  .news-item__content
+    @extend %news-item-div
+    width: 100%
+    background-color: $content-bg-color-main
+    margin-top: 10px
+    padding-left: 10px
+
+

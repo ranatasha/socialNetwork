@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "userID": 1,
+    "content": "Good morning!"
+  },
+  {
+    "id": 2,
+    "userID": 2,
+    "content": "Hello, World!"
+  },
+  {
+    "id": 3,
+    "userID": 3,
+    "content": "qwerty"
+  },
+  {
+    "id": 4,
+    "userID": 4,
+    "content": "Surprise"
+  },
+  {
+    "id": 5,
+    "userID": 5,
+    "content": ":)"
+  },
+  {
+    "id": 6,
+    "userID": 2,
+    "content": "Today is a good day!"
+  },
+  {
+    "id": 7,
+    "userID": 1,
+    "content": "Some post..."
+  },
+  {
+    "id": 8,
+    "userID": 3,
+    "content": "Hello! How are you?)"
+  }
+]

@@ -1,0 +1,30 @@
+$button-main-color: #404040
+$button-hover-color: #909090
+
+.greeting-container
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.greeting
+  border: 1px solid #FFFFFF
+  border-radius: 6px
+  padding: 30px 30px 10px 30px
+  font-size: 24px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.greeting-text
+  margin-bottom: 10px
+
+.greeting-button
+  border: 1px solid #FFFFFF
+  border-radius: 6px
+  padding: 5px 35px
+  text-transform: capitalize
+  font-size: 23px
+  background-color: $button-main-color
+  &:hover
+    background-color: $button-hover-color

@@ -1,0 +1,28 @@
+html(lang="en")
+    head
+        title Friends
+        meta(charset="utf-8")
+        script(src="https://kit.fontawesome.com/ac0925c6df.js" crossorigin="anonymous")
+        script(src='/public/scripts/usersScript.js')
+        link(rel="stylesheet", href="/public/assets/css/main.css")
+        link(rel="stylesheet", href="/public/assets/css/tableTemplate.css")
+        link(rel="stylesheet", href="/public/assets/css/dialog.css")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,200,100", rel='stylesheet', type='text/css')
+        script(
+            src="https://code.jquery.com/jquery-3.6.1.js",
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=",
+            crossorigin="anonymous"
+        )
+
+    body
+        div.wrapper
+            div.mainWindow
+                - var objectsList = friends
+                - var user = user
+                include includes/menu
+                h1 <br>Friends-list of #{user.name}
+                include includes/tableTemplate
+                h1 <br>NewsFeed of #{user.name}
+                button.buttonModal(onclick='followToNews("'+user.id+'")') NewsFeed
+                include includes/editModal
+                include includes/removeFriend

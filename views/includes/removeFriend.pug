@@ -1,0 +1,14 @@
+dialog#modal-remove
+    div.modal.modal-remove
+        div.modal-content
+            div.modal-controls
+                p.modal-header Remove friend
+                button.controls-btn-close(onClick="closeModal(this)")
+                    i.fa.fa-times-circle-o.fa-2x(aria-hidden=true)
+            div.modal-info
+                div.modal-info-item
+                    p User:
+                    select#select-remove-object
+                        each object, index in objectsList
+                            option(value=object.id).removeOptions #{object.name}
+                button(class="buttonModal", onclick="removeFriend()") Remove
