@@ -17,7 +17,6 @@ const openRemoveModal = (isFriendsList) => {
     const modalRemove = document.getElementById('modal-remove');
     modalRemove.showModal();
     modalRemove.style.display = "block";
-    console.log("isFriendsList:", isFriendsList)
 }
 const removeUser = () => {
     const selectRemoveID = document.getElementById('select-remove-object').value
@@ -97,7 +96,6 @@ const getEditData = () => {
             status: newStatus,
         }
         newUser.id = document.getElementById('id').value,
-        console.log(newUser.id)
         editUser(newUser)
     }
 }

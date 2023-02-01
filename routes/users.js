@@ -9,7 +9,6 @@ let router = express.Router();
 
 router.get('/', (req, res) => {
     console.log('Загружаю пользователей...')
-    console.log(users)
     res.render('users', { users });
 });
 router.get('/:id', (req, res)=>{
@@ -55,7 +54,6 @@ router.get(`/:id/feed`, (req, res)=>{
             if (friendsIDArr.indexOf(parseInt(elem.userID)) !== -1)
                 posts.push(elem)
         })
-        console.log(friends)
         res.render('news', { posts, user, friends});
     }
 })
