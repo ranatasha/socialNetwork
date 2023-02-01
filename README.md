@@ -1,5 +1,22 @@
 <h1> Administartion Module for the Social Network</h1>
 <h3>• Was developed using Node.js, Express, Pug, SASS, Gulp •</h3>
+<h2>App's features</h2>
+<ul>
+    <li>Initial loading users from the './users.json'</li>
+    <li>Initial loading users' posts from the './posts.json'</li><br>
+    <li>News feed with friends posts for selected user</li>
+    <li>List of social network users</li>
+    <li>Ability to delete a user</li>
+    <li>The user's friends list</li>
+    <li>User edit card with information:
+        <ul>
+            <li>Name</li>
+            <li>Birthday</li>
+            <li>Email</li>
+            <li>Role (admin/user)</li>
+            <li>Status (active, blocked, unverified)</li>
+        </ul>
+</ul>
 
 <h2>Installation and launch</h2>
 

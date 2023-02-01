@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "server": "node app.js",
+    "serve": "node app.js",
     "dev": "nodemon app.js",
     "sass": "gulp sasswatch",
     "build": "gulp build"
